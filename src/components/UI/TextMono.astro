@@ -1,0 +1,10 @@
+---
+interface Props {
+  content: string
+  classes?: string
+}
+
+const {content, classes} = Astro.props
+---
+
+<div class=`text-3xl xl:text-xl lg:text-sm lg:leading-[1.15] uppercase font-medium animate-pulse duration-300 font-monospaced ${classes}`>{content}</div>
