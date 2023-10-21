@@ -1,7 +1,11 @@
-<section class="relative flex items-center text-white bg-custom-pink justify-cente">
+---
+const heightScreen = '!h-[100svh] !h-[100vh]'
+---
+
+<section class=`relative bg-custom-pink text-white sm:!h-auto flex items-center justify-center ${heightScreen}`>
   <div class="z-10 sm:w-[90%] w-[80%] h-[70%] flex flex-col justify-around sm:justify-start py-16 sm:gap-3 text-justify mx-auto uppercase sm:text-xl text-xl tracking-tight">
     <div class="bg-black p-5 w-[30%] sm:w-full border-2 border-custom-pink">Каким должен быть лайн-ап, чтобы с каждым треком танцпол раскачивался больше, настроение росло, а вместе с ним и желание остаться до утра?</div>
-    <img class="object-cover w-[98.5%] mx-auto" src="../../bg.png" alt="" />
+    <img class="hidden sm:block object-cover w-[98.5%] mx-auto" src="../../bg.png" alt="" />
     <div class="bg-black p-5 w-[30%] sm:w-full border-2 border-custom-pink ml-auto">Новое концертное пространство появится в Москве. На перезапуске Графит выступят хедлайнеры фестивалей и тусовок, супербольшие представители old school и new school.</div>
   </div>
 
