@@ -10,6 +10,10 @@ module.exports = {
         grotesque: ['Mazzard', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'sans-serif'],
       },
       colors: {
+        custom: {
+          pink: '#FB6BB3',
+          peach: '#FD6E66',
+        },
         gray: {
           100: '#f0f0f0',
           200: '#e4e4e4',
