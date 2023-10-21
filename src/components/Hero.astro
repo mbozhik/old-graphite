@@ -1,19 +1,22 @@
 ---
 import Button from './UI/Button.astro'
+import RunningLine from './UI/RunningLine.astro'
 
 const heightScreen = '!h-[100svh] !h-[100vh]'
 ---
 
-<section class=`relative flex flex-col text-white ${heightScreen}`>
-  <div class="sm:w-[90%] w-[80%] mx-auto font-medium sm:text-xl text-2xl sm:mt-5 mt-14">
-    <h2>24 НОЯБРЯ</h2>
-    <h2>2023</h2>
+<section class=`relative flex flex-col overflow-x-hidden text-white ${heightScreen}`>
+  <div class="h-full flex flex-col justify-between sm:mt-5 mt-14 sm:mb-24 mb-28">
+    <div class="sm:w-[90%] w-[80%] mx-auto font-medium sm:text-5xl text-6xl">
+      <h2>24 НОЯБРЯ</h2>
+      <h2>ГРАФИТ</h2>
+    </div>
+    <div class="text-xl font-medium">
+      <Button />
+    </div>
   </div>
-  <div class="absolute grid w-full h-screen -z-10 place-items-center bg-black/40">
-    <h1 class="select-none -mt-14 font-semibold text-[20vw] sm:text-[22.5vw] text-center">ГРАФИТ</h1>
-  </div>
-  <div class="absolute w-full text-xl font-medium bottom-20">
-    <Button />
+  <div class="absolute inset-0 grid w-full h-screen -z-10 place-items-end bg-black/40">
+    <RunningLine />
   </div>
   <img class="absolute top-0 left-0 object-cover w-full h-full -z-50" src="../../bg.png" alt="" />
 </section>
