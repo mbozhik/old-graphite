@@ -1,0 +1,22 @@
+<div class="marquee-rtl sm:text-xl text-2xl overflow-hidden w-screen mb-[3svh] bg-custom-pink">
+  <div>ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ / ГРАФИТ: ОТКРЫТИЕ /</div>
+</div>
+
+<style>
+  .marquee-rtl > div {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 2em 10px 100%;
+    animation: defilement-rtl 30s infinite linear;
+  }
+  @keyframes defilement-rtl {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    100% {
+      -webkit-transform: translate(-100%);
+      transform: translate(-100%);
+    }
+  }
+</style>
