@@ -1,15 +1,15 @@
-# Astro — template `astro` + `tailwind css`
+# Graphite
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/bozzhik/astro_template.git
+git clone https://github.com/bozzhik/graphite.git
 ```
 
 2. Go to the project folder
 
 ```bash
-cd astro_template
+cd graphite
 ```
 
 3. Install dependencies
@@ -27,5 +27,5 @@ npm run dev
 \*4. Or run the git command chain
 
 ```bash
-git clone https://github.com/bozzhik/astro_template.git && cd astro_template && npm i && code .
+git clone https://github.com/bozzhik/graphite.git && cd graphite && npm i && code .
 ```

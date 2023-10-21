@@ -8,9 +8,9 @@ interface Props {
   keywords?: string
 }
 
-const {page_name = '', description, page_path = '', keywords = 'astro, template'} = Astro.props
+const {page_name = '', description, page_path = '', keywords = ''} = Astro.props
 
-const siteName = 'ASTRO TEMPLATE'
+const siteName = 'GRAPHITE'
 ---
 
 <!doctype html>
@@ -25,24 +25,24 @@ const siteName = 'ASTRO TEMPLATE'
     <title>{siteName + page_name}</title>
     <meta name="title" content={siteName + page_name} />
     <meta name="description" content={description} />
-    <meta name="keywords" content=`bozzhik, bozhik, божик, веб-разработчик, веб-дизайнер, портфолио, веб-сайты, фронтенд, фрилансер, заказ сайтов, веб-разработка на заказ, создание сайта, ${keywords}` />
+    <meta name="keywords" content=`graphite, ${keywords}` />
     <meta name="robots" content="index, follow" />
     <meta name="author" content={siteName} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=`https://bozzhik.ru/${page_path}` />
+    <meta property="og:url" content=`https://graphite.house/${page_path}` />
     <meta property="og:title" content={siteName + page_name} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="/seo.png" />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content=`https://bozzhik.ru/${page_path}` />
+    <meta property="twitter:url" content=`https://graphite.house/${page_path}` />
     <meta property="og:title" content={siteName + page_name} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/seo.png" />
     <ViewTransitions />
   </head>
-  <body class="text-white bg-black font-grotesque">
+  <body class="font-grotesque">
     <slot />
   </body>
 </html>

@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        grotesque: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'sans-serif'],
-        monospaced: ['DM Mono'],
+        grotesque: ['Mazzard', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'sans-serif'],
       },
       colors: {
         gray: {
