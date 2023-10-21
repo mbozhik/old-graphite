@@ -1,6 +1,7 @@
 ---
+import Button from './UI/Button.astro'
+
 const heightScreen = '!h-[100svh] !h-[100vh]'
-const buttonHover = 'duration-300 focus:bg-pink-400 hover:outline-none hover:ring-[2.5px] hover:ring-white hover:ring-offset-[3px] hover:ring-offset-[#070509]'
 ---
 
 <section class=`relative flex flex-col text-white ${heightScreen}`>
@@ -12,7 +13,7 @@ const buttonHover = 'duration-300 focus:bg-pink-400 hover:outline-none hover:rin
     <h1 class="select-none -mt-14 font-semibold text-[20vw] sm:text-[22.5vw] text-center">ГРАФИТ</h1>
   </div>
   <div class="absolute w-full text-xl font-medium bottom-24">
-    <a class=`block w-fit mx-auto sm:px-4 sm:py-2 px-5 py-3 text-center sm:text-lg rounded-md text-black uppercase font-medium bg-white ${buttonHover}` href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-5811@12609742?clientKey=058374e2-3eea-4d37-ae2f-3e21651b7c56&regionId=213" target="_blank">Купить билет</a>
+    <Button />
   </div>
   <img class="absolute top-0 left-0 object-cover w-full h-full -z-50" src="../../bg.png" alt="" />
 </section>
