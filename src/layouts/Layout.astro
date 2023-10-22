@@ -1,5 +1,6 @@
 ---
 import {ViewTransitions} from 'astro:transitions'
+import Fonts from './Fonts.astro'
 
 interface Props {
   page_name?: string
@@ -19,7 +20,7 @@ const siteName = 'GRAPHITE'
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=DM+Mono:normal" rel="stylesheet" />
+    <link href="https://fontss.googleapis.com/css?family=DM+Mono:normal" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{siteName + page_name}</title>
@@ -44,32 +45,6 @@ const siteName = 'GRAPHITE'
   </head>
   <body class="bg-black font-grotesque">
     <slot />
-  </body><style is:global>
-    @font-face {
-      font-family: 'Mazzard';
-      src:
-        url('../fonts/MazzardH-Regular.woff2') format('woff2'),
-        url('../fonts/MazzardH-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Mazzard';
-      src:
-        url('../fonts/MazzardH-Medium.woff2') format('woff2'),
-        url('../fonts/MazzardH-Medium.woff') format('woff');
-      font-weight: 500;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Mazzard';
-      src:
-        url('../fonts/MazzardH-SemiBold.woff') format('woff2'),
-        url('../fonts/MazzardH-SemiBold.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-    }
-  </style>
+    <Fonts />
+  </body>
 </html>
