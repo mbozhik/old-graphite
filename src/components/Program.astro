@@ -1,11 +1,18 @@
 ---
+import Button from './UI/Button.astro'
+
 const heightScreen = '!h-[100svh] !h-[100vh]'
 ---
 
 <section class=`relative my-[1.25%] bg-black text-white sm:!h-auto flex items-center justify-center ${heightScreen}`>
   <div class="z-10 sm:w-[90%] w-[80%] justify-end mt-10 h-[90%] flex flex-col py-16 sm:gap-3 text-justify uppercase sm:text-xl text-3xl tracking-tight">
-    <div class="z-[99] sm:w-[90%] w-[80%] font-medium sm:text-5xl text-6xl">
-      <h2 class="p-2 bg-black border-2 border-custom-pink w-fit">В программе открытия — игровые зоны, арт-инсталляции, лаунж, бесплатные фотобудки и многое другое</h2>
+    <div class="z-[99] h-full flex flex-col justify-between">
+      <div class="w-fit">
+        <Button />
+      </div>
+      <div class="sm:w-[90%] w-[80%]">
+        <h2 class="p-2 text-6xl font-medium bg-black border-2 border-custom-pink sm:text-5xl w-fit">В программе открытия — игровые зоны, арт-инсталляции, лаунж, бесплатные фотобудки и многое другое</h2>
+      </div>
     </div>
   </div>
 
