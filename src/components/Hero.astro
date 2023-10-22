@@ -9,11 +9,11 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
 //   <div class="z-[99] font-medium sm:text-5xl text-6xl">
 ---
 
-<section class=`relative flex flex-col overflow-x-hidden text-white ${heightScreen}`>
-  <div class="flex flex-col justify-between h-full sm:mt-5 mt-14 sm:mb-24 mb-[27vh]">
-    <div class="z-[99] sm:w-[90%] w-[80%] mx-auto font-medium sm:text-5xl text-6xl">
-      <h2 class="px-2 pt-1 bg-black border-2 border-b-0 border-custom-pink w-fit">24 НОЯБРЯ</h2>
-      <h2 class="px-2 pb-1 bg-black border-2 border-t-0 border-custom-pink w-fit">ГРАФИТ</h2>
+<section data-section="HERO" class=`relative flex flex-col overflow-x-hidden text-white ${heightScreen}`>
+  <div class="flex flex-col justify-between h-full sm:mt-5 mt-8 sm:mb-24 mb-[26vh]">
+    <div class="sm:w-[90%] z-[5] w-[65%] flex justify-between mx-auto font-medium sm:text-5xl text-6xl">
+      <h2 class="px-2 py-1 bg-custom-pink w-fit">24 НОЯБРЯ</h2>
+      <h2 class="px-2 py-1 bg-custom-pink w-fit">ГРАФИТ</h2>
     </div>
     <div class="text-xl font-medium z-[99]">
       <Button />
@@ -23,7 +23,7 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
     <RunningLine />
   </div>
 
-  <div class="absolute inset-0 z-10 grid w-full h-screen overflow-hidden">
+  <div class="absolute inset-0 z-[6] grid w-full h-screen overflow-hidden">
     <img class="w-full h-full" src="../../public/bg/1920banner.png" alt="" />
   </div>
   <BackgroundImage />
