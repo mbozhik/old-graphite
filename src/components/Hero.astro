@@ -1,6 +1,7 @@
 ---
 import Button from './UI/Button.astro'
 import RunningLine from './UI/RunningLine.astro'
+import BackgroundImage from './UI/BackgroundImage.astro'
 
 const heightScreen = '!h-[100svh] !h-[100vh]'
 ---
@@ -18,5 +19,5 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
   <div class="absolute inset-0 grid w-full h-screen -z-10 place-items-end bg-black/40">
     <RunningLine />
   </div>
-  <img class="absolute top-0 left-0 object-cover w-full h-full -z-50" src="../../bg.png" alt="" />
+  <BackgroundImage />
 </section>
