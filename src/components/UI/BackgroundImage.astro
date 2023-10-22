@@ -9,7 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/ogl@0.0.64/dist/ogl.umd.js"></script>
 <script type="module">
   const imgUrl = '../../bg.png'
-  const imgSize = [1650, 1200]
+  const imgSize = [1920, 1278]
 
   const vertex = `
 					attribute vec2 uv;
@@ -37,13 +37,13 @@
 
 							vec2 uv = .5 * gl_FragCoord.xy / res.xy ;
 							vec2 myUV = (uv - vec2(0.5))*res.zw + vec2(0.5);
-							myUV -= flow.xy * (0.15 * 0.7);
+							myUV -= flow.xy * (0.06 * 0.9);
 
 							vec2 myUV2 = (uv - vec2(0.5))*res.zw + vec2(0.5);
-							myUV2 -= flow.xy * (0.125 * 0.7);
+							myUV2 -= flow.xy * (0.06 * 0.9);
 
 							vec2 myUV3 = (uv - vec2(0.5))*res.zw + vec2(0.5);
-							myUV3 -= flow.xy * (0.10 * 0.7);
+							myUV3 -= flow.xy * (0.06 * 0.9);
 
 							vec3 tex = texture2D(tWater, myUV).rgb;
 							vec3 tex2 = texture2D(tWater, myUV2).rgb;
@@ -55,10 +55,10 @@
   {
     const renderer = new ogl.Renderer({dpr: 2})
     const gl = renderer.gl
+
     const glCanvas = gl.canvas
     const mouseDeformationContainer = document.getElementById('mouse-deformation')
     mouseDeformationContainer.appendChild(glCanvas)
-
     //document.body.appendChild(gl.canvas);
 
     // Variable inputs to control flowmap
@@ -136,8 +136,6 @@
     // Create handlers to get mouse position and velocity
     const isTouchCapable = 'ontouchstart' in window
     if (isTouchCapable) {
-      window.addEventListener('touchstart', updateMouse, false)
-      window.addEventListener('touchmove', updateMouse, {passive: false})
     } else {
       window.addEventListener('mousemove', updateMouse, false)
     }
