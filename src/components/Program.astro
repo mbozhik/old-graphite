@@ -1,13 +1,11 @@
 ---
 import Button from './UI/Button.astro'
 import BackgroundShape from './UI/BackgroundShape.astro'
-
-const heightScreen = '!h-[100svh] !h-[100vh]'
 ---
 
-<section data-section="PROGRAM" class=`overflow-hidden relative my-[1.25%] bg-black text-white sm:!h-auto flex items-center justify-center ${heightScreen}`>
-  <div class="z-10 sm:w-[90%] w-[80%] justify-end mt-10 h-[90%] flex flex-col py-16 sm:gap-3 text-justify uppercase tracking-tight">
-    <div class="z-[99] h-full flex flex-col sm:flex-col-reverse justify-between">
+<section data-section="PROGRAM" class="overflow-hidden relative sm:my-2 my-[1.25%] bg-black text-white flex items-center justify-center">
+  <div class="z-10 sm:w-[90%] w-[80%] justify-end h-[90%] flex flex-col sm:py-8 py-24 sm:gap-3 text-justify uppercase tracking-tight">
+    <div class="z-[99] gap-10 h-full flex flex-col sm:flex-col-reverse justify-between">
       <div class="w-fit sm:mt-[5vh]">
         <Button />
       </div>
