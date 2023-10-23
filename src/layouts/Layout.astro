@@ -21,7 +21,6 @@ const siteName = 'GRAPHITE'
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fontss.googleapis.com/css?family=DM+Mono:normal" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{siteName + page_name}</title>
@@ -47,7 +46,7 @@ const siteName = 'GRAPHITE'
   <body class="bg-black font-grotesque">
     <slot />
 
+    <Fonts />
+    <YandexMetrika />
   </body>
-  <Fonts />
-  <YandexMetrika />
 </html>
