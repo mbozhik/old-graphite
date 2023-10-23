@@ -1,6 +1,7 @@
 ---
 import {ViewTransitions} from 'astro:transitions'
 import Fonts from './Fonts.astro'
+import YandexMetrika from './YandexMetrika.astro'
 
 interface Props {
   page_name?: string
@@ -45,6 +46,8 @@ const siteName = 'GRAPHITE'
   </head>
   <body class="bg-black font-grotesque">
     <slot />
-    <Fonts />
+
   </body>
+  <Fonts />
+  <YandexMetrika />
 </html>
