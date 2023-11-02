@@ -6,31 +6,31 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
 ---
 
 <section data-section="HERO" class=`relative flex flex-col overflow-hidden text-white ${heightScreen}`>
-  <div class="flex flex-col justify-between h-full sm:mt-5 mt-6">
+  <div class="flex flex-col justify-between h-full mt-6 sm:mt-5">
     <div class="sm:w-[90%] z-[99] w-[65%] flex justify-between mx-auto font-medium sm:text-xl xl:text-4xl text-5xl">
-      <a class="px-2 py-1 border-2 bg-black border-custom-pink w-fit" href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-5811@12609742?clientKey=058374e2-3eea-4d37-ae2f-3e21651b7c56&regionId=213" target="_blank">24 НОЯБРЯ</a>
-      <a class="px-2 py-1 border-2 bg-black border-custom-pink w-fit" href="#OPENING">ГРАФИТ</a>
+      <a class="px-2 py-1 bg-black border-2 border-custom-pink w-fit" href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-5811@12609742?clientKey=058374e2-3eea-4d37-ae2f-3e21651b7c56&regionId=213" target="_blank">24 НОЯБРЯ</a>
+      <a class="px-2 py-1 bg-black border-2 border-custom-pink w-fit" href="#OPENING">ГРАФИТ</a>
     </div>
   </div>
   <div class="absolute xs:bottom-[10svh] sm:bottom-[17svh] lg:bottom-[25svh] xl:bottom-[26svh] bottom-[25svh] grid w-full h-screen z-[98] place-items-end">
-    <Button />
+    <Button btn_text="Купить билет" btn_link="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-5811@12609742?clientKey=058374e2-3eea-4d37-ae2f-3e21651b7c56&regionId=213" />
   </div>
   <div class="sm:hidden absolute grid-cols-4 text-6xl xl:text-5xl font-semibold text-center xl:bottom-[11vh] bottom-[10vh] w-[95%] h-[80vh] z-[98] grid place-items-end left-0 right-0 mx-auto">
     <div class="flex flex-col justify-self-center">
       <h1 class="">ВИТЯ АК</h1>
-      <span class="font-normal text-4xl">(AK-47)</span>
+      <span class="text-4xl font-normal">(AK-47)</span>
     </div>
     <div class="flex flex-col justify-self-center">
       <h1 class="ml-10">OBLADAET</h1>
-      <span class="opacity-0 font-normal text-4xl">OPACITY_0</span>
+      <span class="text-4xl font-normal opacity-0">OPACITY_0</span>
     </div>
     <div class="flex flex-col justify-self-center">
       <h1 class="ml-10">DOSE</h1>
-      <span class="opacity-0 font-normal text-4xl">OPACITY_0</span>
+      <span class="text-4xl font-normal opacity-0">OPACITY_0</span>
     </div>
-    <div class="flex flex-col justify-self-center ml-16">
+    <div class="flex flex-col ml-16 justify-self-center">
       <h1 class="">REPTILOID</h1>
-      <span class="font-normal text-4xl">(DJ SET)</span>
+      <span class="text-4xl font-normal">(DJ SET)</span>
     </div>
   </div>
 
@@ -41,9 +41,9 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
   <div class="absolute inset-0 z-[6] xs:-mt-24 sm:-mt-32 lg:mt-10 xl:mt-7 grid h-screen overflow-hidden">
     <picture>
       <source class="-translate-x-5" media="(max-width: 767px)" srcset="../../bg/1080banner.png" />
-      <img class="w-full h-full object-contain" src="../../bg/1920banner.png" alt="" />
+      <img class="object-contain w-full h-full" src="../../bg/1920banner.png" alt="" />
     </picture>
   </div>
-  <img class="hidden sm:block absolute inset-0 object-cover w-full h-full -z-50" src="../../bg/1080banner_hero.jpg" alt="" />
+  <img class="absolute inset-0 hidden object-cover w-full h-full sm:block -z-50" src="../../bg/1080banner_hero.jpg" alt="" />
   <BackgroundImage />
 </section>

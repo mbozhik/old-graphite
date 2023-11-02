@@ -1,7 +1,8 @@
 ---
 import BackgroundEffect from './UI/BackgroundEffect.astro'
+import Button from './UI/Button.astro'
 
-const heightScreen = '!h-[100svh] !h-[100vh]'
+const heightScreen = '!h-[70svh] !h-[70vh]'
 ---
 
 <section id="OPENING" class=`relative flex sm:!h-auto flex-col overflow-hidden text-white ${heightScreen}`>
@@ -10,9 +11,9 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
       <div class="w-[40%] sm:w-fit">
         <h2 class="p-3 mb-3 text-6xl font-medium bg-custom-pink sm:text-3xl xl:text-5xl">
           Графит – центр городской культуры.
-          <span class="mt-3 hidden sm:block mx-auto text-3xl tracking-tight sm:text-start text-justify uppercase list-disc text-white sm:text-base h-fit">24 ноября здесь открывается концертное пространство. Дорога к Графиту представляет из себя галерею стрит-арта, а своды зала украшены холстами от уличных художников. С 2021 года здесь проходят концерты, фестивали культуры и искусства, выставки, маркеты, спортивные соревнования, лекции, мастер-классы, вечеринки, паблик-токи, стендапы и пр.</span>
+          <span class="hidden mx-auto mt-3 text-3xl tracking-tight text-justify text-white uppercase list-disc sm:block sm:text-start sm:text-base h-fit">24 ноября здесь открывается концертное пространство. Дорога к Графиту представляет из себя галерею стрит-арта, а своды зала украшены холстами от уличных художников. С 2021 года здесь проходят концерты, фестивали культуры и искусства, выставки, маркеты, спортивные соревнования, лекции, мастер-классы, вечеринки, паблик-токи, стендапы и пр.</span>
         </h2>
-        <ul class="p-5 sm:p-2 mb-3 mx-auto text-3xl tracking-tight text-justify uppercase list-disc bg-black border-2 text-custom-pink sm:text-xl h-fit border-custom-pink">
+        <ul class="p-5 mx-auto mb-3 text-3xl tracking-tight text-justify uppercase list-disc bg-black border-2 sm:p-2 text-custom-pink sm:text-xl h-fit border-custom-pink">
           <li class="ml-6">2000 гостей</li>
           <li class="ml-6">3 бара</li>
           <li class="ml-6">2 зала</li>
@@ -21,7 +22,10 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
           <li class="ml-6">бесплатная парковка</li>
         </ul>
       </div>
-      <div class="self-end sm:hidden w-[80%] p-5 mx-auto text-3xl tracking-tight text-justify text-white uppercase bg-black border-2 sm:text-xl h-fit border-custom-pink">24 ноября здесь открывается концертное пространство. Дорога к Графиту представляет из себя галерею стрит-арта, а своды зала украшены холстами от уличных художников. С 2021 года здесь проходят концерты, фестивали культуры и искусства, выставки, маркеты, спортивные соревнования, лекции, мастер-классы, вечеринки, паблик-токи, стендапы и пр.</div>
+      <div class="flex flex-col justify-between">
+        <Button btn_text="ОТКРЫТЬ САЙТ" btn_link="https://graphite.moscow/" />
+        <div class="self-end sm:hidden w-[80%] p-5 mx-auto text-3xl tracking-tight text-justify text-white uppercase bg-black border-2 sm:text-xl h-fit border-custom-pink">24 ноября здесь открывается концертное пространство. Дорога к Графиту представляет из себя галерею стрит-арта, а своды зала украшены холстами от уличных художников. С 2021 года здесь проходят концерты, фестивали культуры и искусства, выставки, маркеты, спортивные соревнования, лекции, мастер-классы, вечеринки, паблик-токи, стендапы и пр.</div>
+      </div>
     </div>
   </div>
 
