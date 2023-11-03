@@ -12,10 +12,12 @@ function updateAllButtonsURL() {
   const utmParams = getUTMParameters()
 
   buttons.forEach((button) => {
-    if (utmParams.utmSource) {
-      const currentURL = button.getAttribute('href')
-      const updatedURL = `${currentURL}?utm_source=${utmParams.utmSource}&utm_medium=${utmParams.utmMedium}&utm_campaign=${utmParams.utmCampaign}`
-      button.setAttribute('href', updatedURL)
+    const currentURL = button.getAttribute('href')
+
+    if (currentURL.includes('?')) {
+      button.setAttribute('href', `${currentURL}&utm_source=${utmParams.utmSource}&utm_medium=${utmParams.utmMedium}&utm_campaign=${utmParams.utmCampaign}`)
+    } else {
+      button.setAttribute('href', `${currentURL}?utm_source=${utmParams.utmSource}&utm_medium=${utmParams.utmMedium}&utm_campaign=${utmParams.utmCampaign}`)
     }
   })
 }
