@@ -3,11 +3,11 @@ import Button from './UI/Button.astro'
 import RunningLine from './UI/RunningLine.astro'
 import BackgroundImage from './UI/BackgroundImage.astro'
 
-const heightScreen = '!h-[100svh] !h-[100vh]'
+const heightScreen = 'h-[100svh] h-[100vh]'
 ---
 
 <section data-section="HERO" class=`relative flex flex-col overflow-hidden text-white ${heightScreen}`>
-  <div class="flex flex-col z-[99] justify-between h-full mt-6 sm:mt-5 xs:mb-[10svh] sm:mb-[17svh] lg:mb-[25svh] xl:mb-[26svh] mb-[25svh]">
+  <div class="flex flex-col z-[99] justify-between h-full mt-6 sm:mt-5 xs:mb-[10vh] sm:mb-[17vh] lg:mb-[25vh] xl:mb-[26vh] mb-[25vh]">
     <div class="sm:w-[90%] w-[65%] flex justify-between mx-auto font-medium sm:text-xl xl:text-4xl text-5xl">
       <a class="px-2 py-1 bg-black border-2 border-custom-pink w-fit" href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-5811@12609742?clientKey=058374e2-3eea-4d37-ae2f-3e21651b7c56&regionId=213" target="_blank">24 НОЯБРЯ</a>
       <a class="px-2 py-1 bg-black border-2 border-custom-pink w-fit" href="#OPENING">ГРАФИТ</a>
@@ -34,8 +34,10 @@ const heightScreen = '!h-[100svh] !h-[100vh]'
     </div>
   </div>
 
-  <div class="sm:hidden absolute bottom-0 grid w-full h-screen z-[98] place-items-end">
-    <RunningLine />
+  <div class="xs:hidden absolute sm:bottom-11 bottom-7 grid w-full h-screen z-[98] place-items-end">
+    <div class="flex justify-center sm:h-7 h-10 w-full">
+      <img src="../../logo/1.svg" alt="" />
+    </div>
   </div>
 
   <div class="absolute inset-0 z-[6] xs:-mt-24 sm:-mt-32 lg:mt-10 xl:mt-7 grid h-screen overflow-hidden">
