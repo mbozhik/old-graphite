@@ -1,8 +1,12 @@
 ---
+import RunningLine from './UI/RunningLine.astro'
 const heightScreen = '!h-[100svh] h-[100vh]'
 ---
 
 <section data-section="INTRODUCTION" class=`relative bg-black text-white sm:!h-auto flex items-center justify-center ${heightScreen}`>
+  <div class="sm:hidden absolute top-0 grid w-full h-screen z-[98] place-items-start">
+    <RunningLine />
+  </div>
   <div class="z-10 sm:w-[90%] w-[80%] sm:mt-0 mt-10 h-[90%] flex flex-col justify-between sm:justify-start py-16 sm:py-3 sm:gap-3 text-justify mx-auto uppercase sm:text-xl text-3xl tracking-tight">
     <div class="bg-black p-5 sm:p-3 w-[50%] sm:w-full border-2 border-custom-pink">Каким должен быть лайн-ап, чтобы с каждым треком танцпол раскачивался больше, настроение росло, а вместе с ним и желание остаться до утра?</div>
     <div class="hidden sm:block w-[98.5%] mx-auto opacity-50 saturate-[20%] object-cover overflow-hidden"><img class="scale-125" src="../../intro_1.jpg" alt="" /></div>
