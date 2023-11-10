@@ -1,4 +1,4 @@
-# Graphite
+# Graphite — website for concert promotion
 
 1. Clone the repository
 
@@ -24,7 +24,7 @@ npm i
 npm run dev
 ```
 
-\*4. Or run the git command chain
+*4. Or run the git command chain
 
 ```bash
 git clone https://github.com/bozzhik/graphite.git && cd graphite && npm i && code .
